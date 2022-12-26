@@ -1,0 +1,134 @@
+<div class="main">
+    <div class="signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="signup-box">
+              <div class="box">
+                <div class="logo">
+                  <img src="../../assets/images/logo.png" class="img-fluid" alt="logo" />
+                </div>
+                <h4>Create Your Zoho Account?</h4>
+                <form >
+                    <div class="form-row mt-4">
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="First name" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Last name" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <!-- id="validationServer02" -->
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                        <div class="valid-feedback">
+                          Looks good! 
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                              <input type="password" class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter Your Password">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><i id="toggler" class="fa fa-eye"></i></div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" id="validationServer03" placeholder="City" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                        <label class="text-dark">
+                            I agree to the <a href="#">Terms of service</a> and <a href="#">Privacy policies</a> of Zoho Corporation
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">
+                        Submit
+                      </button>
+                  </form>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h6 class="text-dark mt-4">Signup Using</h6>
+                    </div>
+                    <ul style="list-style: none;display: flex;">
+                      <li><div class="google"></div></li>
+                      <li><div class="microsoft"></div></li>
+                      <li>
+                        <div class="linkedin">
+                          <i class="fa fa-linkedin"></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="facebook">
+                          <i class="fa fa-facebook"></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="twitter">
+                          <i class="fa fa-twitter"></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dots">
+                          <i class="fa fa-ellipsis-h"></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- <div class="col-md-2">
+                      <div class="google"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="microsoft"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="linkedin">
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="facebook">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="twitter">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="dots">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </div>
+                    </div> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center mt-2">
+              Signin:
+              <span class="text-primary"><a routerLink="/login"  routerLinkActive="active">Login Now</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

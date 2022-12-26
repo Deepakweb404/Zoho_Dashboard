@@ -1,0 +1,272 @@
+.navbar{
+    height: 49px;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: #fff;
+}
+.std{
+    font-size: 20px!important;
+    color: #000!important;
+    padding-top: 0px !important;
+}
+
+.dropdown-menu{
+    padding: 0px 0px!important;
+}
+
+.dropdown-divider{
+    margin: 0px 0px !important;
+}
+
+.labelfield{
+    width: 100%!important;
+    background: #fff!important;
+    margin: 3px 1px;
+    padding-left: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.labelfield span{
+    font-size: 13px;
+}
+
+.plmenu{
+    padding: 11px 3px!important;
+}
+.aside{
+     height: 100%;
+     background-color: #343a40!important ;
+     position: fixed;
+     top: 52px;
+}
+.text1{
+    color:#999;
+}
+
+.main{
+    background-color: #f6f5f5;
+    left: 25%;
+}
+
+.tabs{
+    padding: 25px 60px 0;
+    position: relative;
+}
+.nav-tabs .nav-link{
+    color: #999!important;
+}
+.nav-links:hover{
+    color: #999!important;
+}
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #000;
+    color: #000;
+}
+
+.fieldcontainer{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: 0s all ease-in-out;
+    position: relative;
+    margin-top: 4px;
+}
+
+.field1 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 6px 0 6px 10px;
+    width: 35%;
+    margin-right: 10px;
+}
+.field2 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 6px 0 6px 10px;
+    width: 45%;
+    color: #999;
+}
+.field3 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 6px 0 6px 10px;
+    width: 15%;
+}
+
+.sectionlabelfield {
+    width: 200px;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    background: transparent;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.fieldcontainer:hover{
+    border: 1px solid #999;
+}
+
+.current::before{
+    content: '';
+    position: absolute;
+    border-left: 3px solid #f27670;
+    top: 0;
+    left: 0px;
+    width: 10px;
+    height: 37px;
+
+}
+
+.tab1:hover{
+    border: 1px dashed #999;
+    padding-bottom: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 19px;
+    top: 4px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #84c884;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #84c884;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+.setting{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #999;
+}
+
+// .tab1:hover ~ .setting{
+//     display: flex;
+//     flex-direction: row-reverse;
+// }
+
+.imagecontainer{
+    width: 100%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: 0s all ease-in-out;
+    position: relative;
+    margin-top: 4px;
+}
+
+.field4{
+    vertical-align: top;
+    width: 0;
+    margin-right: 10px;
+}
+
+// .field5{
+//     vertical-align: top;
+//     display: inline-block;
+//     padding: 6px 0 6px 10px;
+//     width: 45%;
+//     color: #999;
+    
+// }
+#file{
+	display: none;
+  	margin: 0 auto;
+}
+.field5 {
+    display: block;
+    padding: 44px 40px;
+    border: 0;
+    margin: 0 auto;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    background: #fff;
+    color: #fff;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.field5:hover, .field5:focus {
+    background: rgb(247, 247, 247);
+}
+.field5:active {
+    background: #999;
+    transition: .1s ease-in-out;
+}
+
+.field6{
+    display: block;
+    position: absolute;
+    top: 0px;
+    /* right: 0px; */
+    background: rgb(255, 255, 255);
+    padding: 0px 0px 0px 10px;
+    width: 44%;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.user{
+    font-size: 60px;
+    position: absolute;
+    color: #999;
+    width: 100%;
+    top: 25px;
+    left: 36px;
+}

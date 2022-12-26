@@ -1,0 +1,170 @@
+.main{
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/images/bg.svg") transparent;
+    background-size: auto 100%;
+    z-index: -1;
+    overflow: scroll;
+}
+
+.login-box{
+    display: block;
+    width: 890px;
+    min-height: 520px;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px #ccc6;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 7%;
+    overflow: hidden;
+}
+.sign-box{
+    width: 100%; 
+    min-height: auto;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+    float: left;
+    overflow-y: auto;
+    display: table-cell;
+    border-right: 2px solid #f1f1f1;
+}
+
+.logo{
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+.box{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background: #3b5998;
+    color: #fff;
+    margin-left: 1rem;
+    border-radius: 21%;
+}
+.twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background: #00acee;
+    color: #fff;
+    border-radius: 21%;
+    margin-left: 1rem;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background: #d1d1d1;
+    color: #fff;
+    border-radius: 21%;
+    margin-left: 1rem;
+}
+.linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background: #0e76a8;
+    color: #fff;
+    border-radius: 21%;
+    margin-left: 1rem;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    top: 26px;
+    height: 45px;
+    background-image: url("../../assets/images/google.png");
+    background-repeat: repeat-x;
+    background-position-y: center;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px #ebe9e9;
+}
+
+.microsoft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 46px;
+    background-image: url("../../assets/images/microsoft.png");
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: #000;
+    border-radius: 15%;
+}
+
+#signup {
+    width: 100%;
+    display: inline-block;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup{
+    display: block;
+    width: 544px;
+    min-height: 520px;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.signup-box{
+    width: 529px; 
+    min-height: 520px;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+    float: left;
+    overflow-y: auto;
+    display: table-cell;
+    border-right: 2px solid #f1f1f1;
+}
+
+input {
+    background-color: #f8f8f8 !important;
+  }
+
+  .card{
+      border:#fff !important;
+  }

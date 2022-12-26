@@ -1,0 +1,408 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light">
+  <a class="navbar-brand" ><i class="fa fa-arrow-left" (click)="openPopup()"></i>Lead</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarText"
+    aria-controls="navbarText"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <div class="navbar-nav pl-5 mr-5">
+      <li class="nav-item dropdown" style="margin-left: 302px">
+        <a
+          class="nav-link dropdown-toggle std"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Standard
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/signup"  routerLinkActive="active">Standard</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Create New Layout</a>
+        </div>
+      </li>
+    </div>
+    <span class="navbar-text ml-auto">
+      <button type="button" class="btn btn-secondary mr-2">Cancel</button>
+      <button type="button" class="btn btn-secondary mr-2">Save & Close</button>
+      <button type="button" class="btn btn-primary mr-2">Save</button>
+    </span>
+  </div>
+</nav>
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">You have not saved your changes</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to move away from this page?
+        </p>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="closePopup()">
+          stay here
+        </button>
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+          Leave this page
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container-fluid">
+    <div class="row bg-dark" cdkDropListGroup>
+      <div class="col-md-3 aside bg-dark sticky-top pt-2">
+        <div class="accordion" id="accordionExample">
+          <h6
+            class="plmenu text-white"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            New Field <i class="fa fa-arrow-down"></i>
+          </h6>
+          <div
+            class="row"
+            id="collapseOne"
+            *ngIf="fixedFields.length != 0"
+            cdkDropList
+            [cdkDropListData]="fixedFields"
+            [cdkDropListData]="address"
+            [cdkDropListData]="descrpition"
+            (cdkDropListDropped)="drop($event)"
+          >
+            <div
+              class="col-md-6 col-sm-12"
+              *ngFor="let item of fixedFields"
+              cdkDrag
+            >
+              <div class="labelfield">
+                <i class="{{item.input}}"></i>
+                <span class="pl-2">{{ item.fieldName }}</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="labelfield text-center">
+                <i class="fa fa-arrow-down"></i>
+                <span>SubForm</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="labelfield text-center">
+                <i class="fa fa-arrow-down"></i> <span>New Section</span>
+              </div>
+            </div>
+          </div>
+          <h6
+            class="plmenu text-white"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            New Field <i class="fa fa-arrow-down"></i>
+          </h6>
+          <div class="row" id="collapseTwo">
+            <div class="col-md-12">
+              <p class="text1">All fields are Used In</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="plmenu text-primary">
+              Custom Field Left : <span>499</span>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 main">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container">
+              <div class="tabs">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a
+                      class="nav-link active"
+                      id="nav-create-tab"
+                      data-toggle="tab"
+                      href="#nav-create"
+                      role="tab"
+                      aria-controls="nav-create"
+                      aria-selected="true"
+                      >CREATE</a
+                    >
+                    <a
+                      class="nav-link"
+                      id="nav-create-tab"
+                      data-toggle="tab"
+                      href="#nav-create"
+                      role="tab"
+                      aria-controls="nav-create"
+                      aria-selected="false"
+                      >QUICK CREATE</a
+                    >
+                    <a
+                      class="nav-link"
+                      id="nav-review-tab"
+                      data-toggle="tab"
+                      href="#nav-review"
+                      role="tab"
+                      aria-controls="nav-review"
+                      aria-selected="false"
+                      >DETAIL REVIEW</a
+                    >
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-create"
+                    role="tabpanel"
+                    aria-labelledby="nav-create-tab"
+                  >
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="d-flex flex-row-reverse bd-highlight">
+                          <div class="p-2 bd-highlight">
+                            <a class="text-primary">Preview</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-5">
+                        <div class="tab1 pb-2">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input
+                                name="label"
+                                type="text"
+                                maxlength="50"
+                                class="sectionlabelfield"
+                                placeholder="Lead Image"
+                                value="Lead Image"
+                                readonly
+                              />
+                              <div  *ngIf = "imageShow">
+                                <div class="imagecontainer pl-3">
+                                    <div class="field4">
+                                      <span></span>
+                                    </div>
+                                    <div class="field5">
+                                        <i class="fa fa-solid fa-user user"></i>
+                                      <span><input type="file" accept="image/*" id="file">
+                                    </span>
+                                    </div>
+                                    <div class="field6">
+                                      <span><i class="fa fa-ellipsis-h"></i></span>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label class="switch" >
+                                <input type="checkbox" 	(click)=toggleDisplayDiv()/>
+                                <span class="slider round" ></span>
+                              </label>
+                              
+                              <!-- <div class="row">
+                               
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="row tab1 mb-5 pb-2"
+                      *ngIf="fixedFields.length != 0"
+                      cdkDropList 
+                      
+                      [cdkDropListData]="field"
+                      (cdkDropListDropped)="drop($event)"
+                    >
+                      <div class="col-md-6">
+                        <input
+                          name="label"
+                          type="text"
+                          maxlength="50"
+                          class="sectionlabelfield"
+                          placeholder="Lead Information"
+                          value="Lead Information"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="setting">
+                          <i class="fa fa-cog"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                          <div class="dropdown-menu">
+                            <h6 class="dropdown-header">Section Layout</h6>
+                            <a class="dropdown-item" >Single Column</a>
+                            <a class="dropdown-item" >Double Column</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header">Section Layout</h6>
+                            <a class="dropdown-item" >Left to Right</a>
+                            <a class="dropdown-item" >Top to Bottom</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger">Remove Field</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6" *ngFor="let items of field" [cdkDragDisabled]="items.disabled" cdkDrag>
+                        <div class="fieldcontainer">
+                          <div class="field1">
+                            <span >{{ items.fieldName }}</span>
+                          </div>
+                          <div class="field2">
+                            <span>{{ items.fieldName2 }}</span>
+                          </div>
+                          <div class="field3">
+                            <span><i class="fa fa-ellipsis-h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" >Mark as required </a>
+                                    <a class="dropdown-item" >Do not allow dulipcate values</a>
+                                    <a class="dropdown-item" >Set Permission</a>
+                                    <a class="dropdown-item" >Edit Properties</a>
+                                    <a class="dropdown-item" >Create Layout Rule</a>
+                                    <a class="dropdown-item" >Create Validation Rule</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger">Remove Field</a>
+                                  </div>
+                            </span>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row tab1 mt-5 mb-5 pb-2">
+                      <div class="col-md-12"
+                      cdkDropList
+                      [cdkDropListData]="address"
+                      (cdkDropListDropped)="drop($event)">
+                        <input
+                          name="label"
+                          type="text"
+                          maxlength="50"
+                          class="sectionlabelfield"
+                          placeholder="Address Information"
+                          value="Address Information"
+                        />
+                      </div>
+                      <div class="col-md-6"  *ngFor="let items of address" [cdkDragDisabled]="items.disabled" cdkDrag>
+                        <div class="fieldcontainer">
+                          <div class="field1">
+                            <span>{{ items.add1 }}</span>
+                          </div>
+                          <div class="field2">
+                            <span>{{ items.add2 }}</span>
+                          </div>
+                          <div class="field3">
+                            <span><i class="fa fa-ellipsis-h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" >Mark as required </a>
+                                  <a class="dropdown-item" >Do not allow dulipcate values</a>
+                                  <a class="dropdown-item" >Set Permission</a>
+                                  <a class="dropdown-item" >Edit Properties</a>
+                                  <a class="dropdown-item" >Create Layout Rule</a>
+                                  <a class="dropdown-item" >Create Validation Rule</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-danger">Remove Field</a>
+                                </div>
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row tab1 mt-5 mb-5 pb-2"
+                    *ngIf="descrpition.length != 0"
+                    cdkDropList
+                    [cdkDropListData]="descrpition"
+                    (cdkDropListDropped)="drop($event)">
+                      <div class="col-md-10 mb-2">
+                        <input
+                          name="label"
+                          type="text"
+                          maxlength="50"
+                          class="sectionlabelfield"
+                          placeholder="Description Information"
+                          value="Description Information"
+                        />
+                      </div>
+                      <div class="col-md-2 mb-2">
+                        <div class="setting">
+                          <i class="fa fa-cog"></i>
+                        </div>
+                      </div>
+                      <div class="col-md-6"  *ngFor="let items of descrpition" cdkDrag>
+                        <div class="fieldcontainer">
+                          <div class="field1">
+                            <span>{{ items.des1 }}</span>
+                          </div>
+                          <div class="field2">
+                            <span>{{ items.des2 }}</span>
+                          </div>
+                          <div class="field3">
+                            <span><i class="fa fa-ellipsis-h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" >Mark as required </a>
+                                  <a class="dropdown-item" >Do not allow dulipcate values</a>
+                                  <a class="dropdown-item" >Set Permission</a>
+                                  <a class="dropdown-item" >Edit Properties</a>
+                                  <a class="dropdown-item" >Create Layout Rule</a>
+                                  <a class="dropdown-item" >Create Validation Rule</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-danger">Remove Field</a>
+                                </div>
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="nav-create"
+                    role="tabpanel"
+                    aria-labelledby="nav-create-tab"
+                  >
+                    ...
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-review"
+                    role="tabpanel"
+                    aria-labelledby="nav-review-tab"
+                  >
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<router-outlet></router-outlet>

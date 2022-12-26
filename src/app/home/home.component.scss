@@ -1,0 +1,122 @@
+.main {
+    background: url('../../assets/images/bg.png') repeat-x fixed #edf0f4;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+}
+.newhead{
+    background: url('../../assets/images/bg.png') repeat-x fixed #edf0f4;
+}
+
+.blg{
+    font-size: 34px;
+    border: 2px solid #000;
+    padding: 0px 10px 0px 10px;
+    color: #999;
+    background: #f3f0f0;
+}
+
+.fresh{
+    font-size: 23px;
+    color: #000;
+}
+
+.btn-toggle{
+    background: linear-gradient(#fcfdff 0,#eaeef5 100%) no-repeat padding-box;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.header{
+    position:relative;
+}
+.section{
+    padding-top: 12%;
+    height: auto;  
+    z-index:20;
+}
+
+.dropdown-menu{
+    box-shadow: 0 10px 17px rgb(0 0 0 / 30%);
+}
+
+.cardimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.btn-white{
+    color: #555;
+    background-color: #ffffff;
+    border-color: #000000;
+    font-weight: 500;
+}
+
+.enterprise{
+    line-height: initial;
+    text-align: center;
+    margin-bottom: unset;
+    font-size: 15px;
+}
+.enterprise span{
+    display: block;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.nav-part::before{
+    background: #555;
+    content: "";
+    display: block;
+    top: 17px;
+    height: 37px;
+    position: absolute;
+    width: 2px;
+}
+.nav-part::after{
+    background: #555;
+    content: "";
+    display: block;
+    top: 17px;
+    height: 37px;
+    right: 7%;
+    position: absolute;
+    width: 2px;
+}
+
+.parts{
+    font-size: 25px;
+    margin-left: 10px;
+    color: #d3d2d2;
+    font-weight:lighter;
+    margin-right: 10px;
+}
+
+.dp{
+    border-radius: 50%;
+    width: 36px;
+    height: 35px;
+}
+
+.bento-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    height : 22px;
+    width : 22px;
+  }
+  
+  .bento-dot {
+    width : 6px;
+    height: 6px;
+    border-radius: 999px;
+    background:#d3d2d2;
+    overflow: hidden;
+  }
+
+.mt-10{
+    margin-top: 67px;
+}

@@ -1,0 +1,135 @@
+<div class="main">
+    <div class="login-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="sign-box">
+              <div class="box">
+                <div class="logo">
+                  <img src="../../assets/images/logo.png" class="img-fluid" alt="logo" />
+                </div>
+                <h4>Sign in</h4>
+                <p>access to CRM</p>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg btn-block mt-4"
+                  >
+                    Submit
+                  </button>
+                </form>
+                <h6 class="text-primary text-center mt-4">
+                  Forgot Password?
+                </h6>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h6 class="text-dark mt-4">Forgot Password?</h6>
+                </div>
+                <ul style="list-style: none;display: flex;">
+                  <li><div class="google"></div></li>
+                  <li><div class="microsoft"></div></li>
+                  <li>
+                    <div class="linkedin">
+                      <i class="fa fa-linkedin"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="facebook">
+                      <i class="fa fa-facebook"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="twitter">
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dots">
+                      <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                      <img class="card-img-top" src="../../assets/images/1.png" alt="Card image cap">
+                      <div class="card-body">
+                          <h6 class="text-center">Passwordless sign-in</h6>
+                        <p class="text-center">Move away from risky passwords and experience one-tap access to Zoho. Download and Install OneAuth.</p>
+                        <div class="d-flex justify-content-center ">
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                      <img class="card-img-top" src="../../assets/images/2.png" alt="Card image cap">
+                      <div class="card-body">
+                          <h6 class="text-center">Easy recovery modes</h6>
+                        <p class="text-center">Lost access to OneAuth? Worry not. Set up passphrase and backup number to recover OneAuth easily.</p>
+                        <div class="d-flex justify-content-center ">
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                      <img class="card-img-top" src="../../assets/images/3.png" alt="Card image cap">
+                      <div class="card-body">
+                          <h6 class="text-center">MFA for all accounts</h6>
+                        <p class="text-center">Secure online accounts with OneAuth 2FA. Back up OTP secrets and never lose access to your accounts.
+                      </p>
+                      <div class="d-flex justify-content-center ">
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                      </div>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center mt-2">
+              Don't have a Zoho account?
+              <span class="text-primary"><a routerLink="/signup"  routerLinkActive="active">Sign Up Now</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
